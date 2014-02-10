@@ -1,0 +1,68 @@
+﻿body
+{
+}
+#headerContent
+{
+    position:fixed;
+    direction: rtl;
+    width: 100%;
+    z-index:10;   
+}
+
+#forHeader
+{
+    height:176px;
+}
+
+#footerContent
+{
+    overflow:hidden;
+    position:fixed;
+    z-index:10;
+    bottom:0px;
+    height: 180px;
+    text-align: center;
+    direction: rtl;
+}
+
+#siteName
+{
+    padding-right:20px;
+    float: right;
+}
+
+#moto
+{
+    float: right;
+}
+
+#game_bunner
+{
+    height:100px;
+}
+
+#footer table
+{
+}
+
+.style1
+{
+    width: 500px;
+}
+
+li.headlink ul
+{
+    display: none;
+    
+}
+li.headlink:hover ul
+{
+    display: block;
+    list-style-type:none;
+}
+
+#mainContent
+{
+    height:360px;
+    overflow:scroll;
+}

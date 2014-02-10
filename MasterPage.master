@@ -1,0 +1,230 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
+
+    <link href="css/mainMaster.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="headerContent">
+        <h1 id="siteName">
+            בומרנג</h1>
+        <h4 id="moto" style="vertical-align: text-bottom;">
+            אם לא תיתן איך תקבל?</h4>
+        <br />
+        <div style="float: left;">
+            <table>
+                <tr>
+                    <td>
+                        <ul id="cssdropdown" style="position:absolute;">
+                            <li class="headlink" style="list-style-type: none"><a href="#">log in</a>
+                                <ul>
+                                    <li><a href="#" id="nonProfitReg">עמותה</a></li>
+                                    <li><a href="#" id="userReg">משתמש</a></li>
+                                    <li><a href="#" id="companyReg">תאגיד</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <asp:Button ID="Button3" runat="server" Text="עזרה" />
+                    </td>
+                    <td>
+                        <asp:Button ID="Button2" runat="server" Text="שפה" />
+                    </td>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" Text=" רשתות חברתיות" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="game_bunner">
+        </div>
+        <div style="padding-right: 20px;">
+            <table style="float: left; width: 100%;">
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="button" id="toNonProfitPage" value="עמותות" />
+                                </td>
+                                <td>
+                                    <input type="button" id="toCampaignPage" value="קמפיינים" />
+                                </td>
+                                <td>
+                                    <input type="button" id="toCompanyPage" value="חברות " />
+                                </td>
+                                <td>
+                                    <input type="button" id="toPartnersPage" value="שותפים " />
+                                </td>
+                                <td>
+                                    <input type="button" id="toAboutUsPage" value="אודות " />
+                                </td>
+                                <td>
+                                    <input type="button" id="toContactUsPage" value="צור קשר" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table style="float: left;">
+                            <tr>
+                                <td>
+                                    <asp:Button ID="Button13" runat="server" Text="תרום" />
+                                </td>
+                                <td>
+                                    <asp:Button ID="Button12" runat="server" Text="קדם" />
+                                </td>
+                                <td>
+                                    <asp:Button ID="Button11" runat="server" Text="התנדב" />
+                                </td>
+                                <td>
+                                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <br />
+        <hr />
+    </div>
+    <div id="forHeader"></div>
+    <div id="mainContent">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="footerContent">
+        <hr />
+        <table id="footer table">
+            <tr>
+                <td class="style1">
+                    משתמשים פרטיים
+                </td>
+                <td class="style1">
+                    משתמשים עסקיים
+                </td>
+                <td class="style1">
+                    עמותות ומלכ"רים
+                </td>
+                <td class="style1">
+                    התחרות החברתית
+                </td>
+                <td class="style1">
+                    המשחק הסלולרי
+                </td>
+                <td class="style1">
+                    החברה
+                </td>
+            </tr>
+            <tr>
+                <td class="style1">
+                    איך זה עובד ?
+                </td>
+                <td class="style1">
+                    איך זה עובד ?
+                </td>
+                <td class="style1">
+                    איך זה עובד ?
+                </td>
+                <td class="style1">
+                    איך זה עובד ?
+                </td>
+                <td class="style1">
+                    איך זה עובד ?
+                </td>
+                <td class="style1">
+                    אודות
+                </td>
+            </tr>
+            <tr>
+                <td class="style1">
+                    תכניות ועלויות
+                </td>
+                <td class="style1">
+                    תכניות ועלויות
+                </td>
+                <td class="style1">
+                    תכניות ועלויות
+                </td>
+                <td class="style1">
+                    הפרסים
+                </td>
+                <td class="style1">
+                    המשחקים
+                </td>
+                <td class="style1">
+                    הצוות
+                </td>
+            </tr>
+            <tr>
+                <td class="style1">
+                    רישום לאתר
+                </td>
+                <td class="style1">
+                    רישום לאתר
+                </td>
+                <td class="style1">
+                    רישום לאתר
+                </td>
+                <td class="style1">
+                    האתגרים
+                </td>
+                <td class="style1">
+                    שאלות נפוצות
+                </td>
+                <td class="style1">
+                    "הסיפור שלנו"
+                </td>
+            </tr>
+            <tr>
+                <td class="style1">
+                    דירוג משתמשים
+                </td>
+                <td class="style1">
+                    דירוג חברות
+                </td>
+                <td class="style1">
+                    התחרות החברתית
+                </td>
+                <td class="style1">
+                    ניקוד חברתי
+                </td>
+                <td class="style1">
+                    יצירת קשר
+                </td>
+            </tr>
+            <tr>
+                <td class="style1">
+                    מפורסמים במערכת
+                </td>
+                <td class="style1">
+                    תרומות וחסויות
+                </td>
+                <td class="style1">
+                    התחרות החברתית
+                </td>
+                <td class="style1">
+                    &nbsp;
+                </td>
+                <td class="style1">
+                </td>
+                <td class="style1">
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
